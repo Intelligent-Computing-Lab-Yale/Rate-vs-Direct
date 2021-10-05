@@ -1,6 +1,6 @@
 # Rate-vs-Direct
 
-This repository contains the source code associated with RATE CODING OR DIRECT CODING: WHICH ONE IS BETTER FOR ACCURATE, ROBUST, and ENERGY-EFFICIENT SPIKING NEURAL NETWORKS?
+This repository contains the source code associated with RATE CODING OR DIRECT CODING: WHICH ONE IS BETTER FOR ACCURATE, ROBUST, and ENERGY-EFFICIENT SPIKING NEURAL NETWORKS? submitted to ICASSP2022.
 
 
 ## Introduction

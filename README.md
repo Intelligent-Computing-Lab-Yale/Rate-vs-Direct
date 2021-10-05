@@ -17,16 +17,6 @@ First, we compare the performance of two coding techniques with three different 
 * Torchvision 0.8.0+ (recent version is recommended)     
 * NVIDIA GPU (>= 12GB)        
 
-## Getting Started
-
-### Installation
-* Configure virtual (anaconda) environment
-```
-conda create -n env_name python=3.7
-source activate env_name
-conda install pytorch torchvision cudatoolkit=10.0 -c pytorch
-```
-
 
 ## Training and testing
 
@@ -48,17 +38,6 @@ python train.py --dataset cifar100 --arch vgg9 --encode p --leak_mem 0.5 --T 20 
 ```
 
 
-## Citation
- 
-Please consider citing our paper:
- ```
- @article{kim2020revisiting,
-  title={Revisiting Batch Normalization for Training Low-latency Deep Spiking Neural Networks from Scratch},
-  author={Kim, Youngeun and Panda, Priyadarshini},
-  journal={arXiv preprint arXiv:2010.01729},
-  year={2020}
-}
- ```
  
  
 

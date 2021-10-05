@@ -13,6 +13,7 @@ Spiking Neural Networks (SNNs) have recently emerged as an alternative to deep l
 * Ubuntu 18.04    
 * Python 3.6+    
 * PyTorch 1.5+ (recent version is recommended)     
+* Torchvision 0.8.0+ (recent version is recommended)     
 * NVIDIA GPU (>= 12GB)        
 
 ## Getting Started
@@ -30,19 +31,19 @@ conda install pytorch torchvision cudatoolkit=10.0 -c pytorch
 
 * We provide VGG9/VGG11 architectures on CIFAR10/CIAR100 datasets
 * ```train.py```: code for training  
-* ```model.py```: code for VGG9/VGG11 Spiking Neural Networks with BNTT  
-* ```utill.py```: code for accuracy calculation / learning rate scheduler
+* ```model.py```: code for MLP/VGG5/VGG9 Spiking Neural Networks with Rate/Direct coding
+* ```util.py```: code for accuracy calculation / learning rate scheduler
 
-*  Run the following command for VGG9 SNN on CIFAR10
-
-```
-python train.py --num_steps 25 --lr 0.3 --arch 'vgg9' --dataset 'cifar10' --batch_size 256 --leak_mem 0.95 --num_workers 4 --num_epochs 100
-```
-
-*  Run the following command for VGG11 SNN on CIFAR100
+*  Run the following command for VGG5-SNN-Direct on CIFAR10
 
 ```
-python train.py --num_steps 30 --lr 0.3 --arch 'vgg11' --dataset 'cifar100' --batch_size 128 --leak_mem 0.99 --num_workers 4 --num_epochs 100
+python train.py --dataset cifar10 --arch vgg5 --encode d --leak_mem 0.5 --T 10 --lr 1e-3 --batch_size 128
+```
+
+*  Run the following command for VGG9-SNN-Poisson on CIFAR100
+
+```
+python train.py --dataset cifar100 --arch vgg9 --encode p --leak_mem 0.5 --T 20 --lr 1e-3 --batch_size 128
 ```
 
 

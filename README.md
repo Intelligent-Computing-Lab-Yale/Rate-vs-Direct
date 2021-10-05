@@ -29,13 +29,13 @@ First, we compare the performance of two coding techniques with three different 
 * Argparse configuration
 
 ```
-dataset [mnist, cifar10, cifar100]
-encode [p, d]
-arch [mlp, vgg5, vgg9]
-T(timestep) = [5, 10, 15, 20, 30] for both d and p
-leak_mem = [0.5]
-epoch = [100]
-lr [1e-3]
+--dataset [mnist, cifar10, cifar100]
+--encode [p, d]
+--arch [mlp, vgg5, vgg9]
+--T(timestep) = [5, 10, 15, 20, 30]
+--leak_mem = [0.5]
+--epoch [100]
+--lr [1e-3]
 ```
 
 *  Run the following command for VGG5-SNN-Direct on CIFAR10

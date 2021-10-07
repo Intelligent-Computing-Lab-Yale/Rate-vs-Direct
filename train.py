@@ -244,8 +244,6 @@ elif args.dataset == 'cifar100':
         num_workers=4,
         pin_memory=True)
 
-Encoding = args.encode
-
 if args.encode == 'd':
     if args.arch == 'mlp':
         net = model.MLP_Direct(num_steps=T, leak_mem= leak_mem, img_size = img_size, input_dim = input_dim).cuda()

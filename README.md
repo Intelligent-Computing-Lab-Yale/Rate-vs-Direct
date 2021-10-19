@@ -20,7 +20,6 @@ First, we compare the performance of two coding techniques with three different 
 
 ## Training and testing
 
-* We provide VGG9/VGG11 architectures on CIFAR10/CIAR100 datasets
 * ```train.py```: code for training  
 * ```model.py```: code for MLP/VGG5/VGG9 Spiking Neural Networks with Rate/Direct coding
 * ```util.py```: code for accuracy calculation / learning rate scheduler
